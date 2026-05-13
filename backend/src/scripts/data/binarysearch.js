@@ -1,0 +1,23 @@
+import { prob } from '../starterFactory.js';
+export const binarySearchProblems = [
+prob('Binary Search Target','binary-search-target','binary search','easy','Find the index of target in a sorted array. Return -1 if not found.','Line 1: n. Line 2: n sorted ints. Line 3: target.','Single integer — index or -1.','1≤n≤10^4','binarySearch','arr:arr,target:int->int',['Binary Search'],
+[['6\n-1 0 3 5 9 12\n9','4'],['6\n-1 0 3 5 9 12\n2','-1'],['1\n5\n5','0'],['3\n1 2 3\n1','0',1],['5\n10 20 30 40 50\n50','4',1]]),
+prob('Integer Square Root','integer-sqrt','binary search','easy','Compute the integer square root of a non-negative integer (floor of sqrt).','Line 1: non-negative integer.','Single integer.','0≤x≤2^31-1','mySqrt','n:int->int',['Binary Search','Math'],
+[['8','2'],['4','2'],['0','0'],['1','1',1],['100','10',1]]),
+prob('First Bad Version','first-bad-version','binary search','easy','Given n versions and a bad start point k, find the first bad version. Input: n and k (versions k..n are bad).','Line 1: n. Line 2: k (first bad).','Single integer.','1≤k≤n≤2^31-1','firstBad','n:int,k:int->int',['Binary Search'],
+[['5\n4','4'],['1\n1','1'],['10\n1','1'],['100\n50','50',1],['3\n2','2',1]]),
+prob('Search Rotated Array','search-rotated','binary search','medium','Search for a target in a sorted array that has been rotated at an unknown pivot.','Line 1: n. Line 2: n ints (rotated sorted). Line 3: target.','Index or -1.','1≤n≤5000','searchRotated','arr:arr,target:int->int',['Binary Search'],
+[['7\n4 5 6 7 0 1 2\n0','4'],['7\n4 5 6 7 0 1 2\n3','-1'],['1\n1\n0','-1'],['5\n3 4 5 1 2\n4','1',1],['4\n2 3 4 1\n1','3',1]]),
+prob('Find Peak Element','find-peak','binary search','medium','Find any index where the element is strictly greater than its neighbors.','Line 1: n. Line 2: n integers.','A valid peak index.','1≤n≤1000','findPeak','arr:arr->int',['Binary Search'],
+[['4\n1 2 3 1','2'],['5\n1 2 1 3 5','4'],['1\n1','0'],['3\n3 2 1','0',1],['3\n1 2 1','1',1]]),
+prob('Kth Smallest in Sorted Matrix','kth-sorted-matrix','binary search','medium','Find the kth smallest element in a row-wise and column-wise sorted matrix.','Line 1: n (n×n matrix). Then n rows. Last line: k.','Single integer.','1≤n≤300, 1≤k≤n²','kthSmallest','matrix:matrix,k:int->int',['Binary Search','Matrix','Heap'],
+[['3\n1 5 9\n10 11 13\n12 13 15\n8','13'],['2\n1 2\n3 4\n3','3'],['1\n1\n1','1'],['3\n1 2 3\n4 5 6\n7 8 9\n5','5',1],['2\n1 3\n2 4\n4','4',1]]),
+prob('Find Minimum in Rotated','min-rotated','binary search','medium','Find the minimum element in a rotated sorted array.','Line 1: n. Line 2: n ints (rotated sorted, unique).','Single integer.','1≤n≤5000','findMin','arr:arr->int',['Binary Search'],
+[['5\n3 4 5 1 2','1'],['4\n4 5 6 7','4'],['5\n11 13 15 17 1','1'],['7\n2 3 4 5 6 7 1','1',1],['1\n1','1',1]]),
+prob('Median of Data Stream','stream-median','binary search','hard','Process add/find operations on a data stream. Return medians as decimals.','Line 1: n ops. Then op lines (add x or find).','Space-separated median results.','1≤n≤5×10^4','streamMedian','arr:arr->arr',['Binary Search','Heap','Design'],
+[['5\nadd 1\nadd 2\nfind\nadd 3\nfind','1.5 2'],['3\nadd 5\nfind\nadd 10','5'],['6\nadd 1\nadd 1\nfind\nadd 1\nadd 1\nfind','1 1'],['4\nadd 3\nadd 1\nadd 2\nfind','2',1],['3\nadd 100\nadd 200\nfind','150',1]]),
+prob('Split Array Largest Sum','split-array-sum','binary search','hard','Split array into m subarrays to minimize the largest subarray sum.','Line 1: n. Line 2: n non-negative ints. Line 3: m.','Single integer — minimized largest sum.','1≤n≤1000, 1≤m≤min(50,n)','splitArray','arr:arr,m:int->int',['Binary Search','DP'],
+[['5\n7 2 5 10 8\n2','18'],['4\n1 2 3 4\n2','6'],['3\n1 4 4\n3','4'],['5\n1 1 1 1 1\n5','1',1],['3\n10 10 10\n1','30',1]]),
+prob('Count Range Sum','count-range-sum','binary search','hard','Count the number of range sums that lie in [lower, upper] inclusive.','Line 1: n. Line 2: n ints. Line 3: lower upper.','Single integer — count.','1≤n≤10^4','countRangeSum','arr:arr,lo:int,hi:int->int',['Binary Search','Merge Sort'],
+[['3\n-2 5 -1\n-2 2','3'],['1\n0\n0 0','1'],['3\n1 2 3\n1 3','4'],['4\n-1 -1 1 1\n-1 1','6',1],['2\n0 0\n0 0','3',1]]),
+];

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-gray-950 text-gray-100;
+}
+
+body {
+  @apply antialiased min-h-screen;
+}
+
+/* CodeMirror dark theme overrides */
+.cm-editor {
+  @apply rounded-lg border border-gray-700;
+}
+.cm-scroller {
+  @apply font-mono text-sm;
+}

@@ -1,0 +1,23 @@
+import { prob } from '../starterFactory.js';
+export const stackQueueProblems = [
+prob('Valid Parentheses','valid-parentheses','stack & queue','easy','Determine if a string of brackets is balanced. Use (){}[].','Line 1: string of brackets.','true or false.','0≤|s|≤10^4','isValid','s:str->bool',['Stack'],
+[['()[]{}','true'],['(]','false'],['()','true'],['([)]','false',1],['{[]}','true',1]]),
+prob('Queue Using Stacks','queue-using-stacks','stack & queue','easy','Simulate a queue with push/pop/peek operations. Return results of peek and pop ops.','Line 1: n ops. Then n lines.','Space-separated results.','1≤n≤100','queueOps','arr:arr->arr',['Stack','Queue','Design'],
+[['5\npush 1\npush 2\npeek\npop\npeek','1 1 2'],['3\npush 5\npop\npush 3','5'],['4\npush 1\npush 2\npop\npop','1 2'],['2\npush 10\npeek','10',1],['6\npush 1\npush 2\npush 3\npop\npop\npop','1 2 3',1]]),
+prob('Min Stack','min-stack','stack & queue','easy','Design a stack that supports push, pop, top, and retrieving the minimum in O(1).','Line 1: n ops. Then n lines.','Space-separated results of getMin and top calls.','1≤n≤3×10^4','minStack','arr:arr->arr',['Stack','Design'],
+[['7\npush -2\npush 0\npush -3\ngetMin\npop\ntop\ngetMin','-3 0 -2'],['3\npush 1\npush 2\ngetMin','1'],['5\npush 5\npush 3\ngetMin\npop\ngetMin','3 5'],['4\npush 0\npush 0\ngetMin\npop','0',1],['3\npush -1\ntop\ngetMin','-1 -1',1]]),
+prob('Evaluate Reverse Polish','eval-rpn','stack & queue','medium','Evaluate an arithmetic expression in Reverse Polish Notation. Operators: + - * /','Line 1: n tokens. Line 2: space-separated tokens.','Single integer result.','1≤n≤10^4','evalRPN','arr:arr->int',['Stack'],
+[['5\n2 1 + 3 *','9'],['4\n4 13 5 /','0'],['5\n10 6 9 3 /','3'],['7\n3 4 + 2 * 7 /','2',1],['3\n5 1 -','4',1]]),
+prob('Daily Temperatures','daily-temperatures','stack & queue','medium','For each day, find how many days until a warmer temperature. 0 if none.','Line 1: n. Line 2: n temperatures.','Space-separated wait days.','1≤n≤10^5','dailyTemps','arr:arr->arr',['Stack'],
+[['8\n73 74 75 71 69 72 76 73','1 1 4 2 1 1 0 0'],['3\n30 40 50','1 1 0'],['3\n30 20 10','0 0 0'],['1\n100','0',1],['5\n50 50 50 50 50','0 0 0 0 0',1]]),
+prob('Simplify Directory Path','simplify-path','stack & queue','medium','Simplify an absolute Unix-style file path.','Line 1: path string.','Simplified canonical path.','1≤|path|≤3000','simplifyPath','s:str->str',['Stack','String'],
+[['/home/','/home'],['/home//foo/','/home/foo'],['/../','/'],['/.../a/../b/c/../d/','//.../b/d'],['/a/b/c','a/b/c',1]]),
+prob('Decode Bracket String','decode-string','stack & queue','medium','Decode strings like 3[a2[c]] → accaccacc. Numbers before brackets indicate repeat count.','Line 1: encoded string.','Decoded string.','1≤|s|≤30','decodeString','s:str->str',['Stack','String'],
+[['3[a]2[bc]','aaabcbc'],['3[a2[c]]','accaccacc'],['2[abc]3[cd]ef','abcabccdcdcdef'],['10[a]','aaaaaaaaaa',1],['2[2[b]]','bbbb',1]]),
+prob('Largest Rectangle in Skyline','largest-rect-skyline','stack & queue','hard','Find the largest rectangular area under a histogram.','Line 1: n. Line 2: n bar heights.','Single integer — max area.','1≤n≤10^5','largestRect','arr:arr->int',['Stack'],
+[['6\n2 1 5 6 2 3','10'],['2\n2 4','4'],['3\n6 7 5','15'],['1\n1','1',1],['5\n5 5 5 5 5','25',1]]),
+prob('Max Frequency Stack','max-freq-stack','stack & queue','hard','Design a stack that pops the most frequent element. On tie, pop most recently pushed.','Line 1: n ops. Then n lines.','Space-separated pop results.','1≤n≤2×10^4','freqStack','arr:arr->arr',['Stack','Hash Map','Design'],
+[['9\npush 5\npush 7\npush 5\npush 7\npush 4\npush 5\npop\npop\npop','5 7 5'],['5\npush 1\npush 1\npush 2\npop\npop','1 1'],['4\npush 3\npush 3\npop\npop','3 3'],['6\npush 1\npush 2\npush 1\npush 2\npop\npop','1 2',1],['3\npush 5\npush 5\npop','5',1]]),
+prob('Sliding Window Max Queue','sliding-window-max-q','stack & queue','hard','Given an array and window k, return the max value in each window.','Line 1: n. Line 2: n ints. Line 3: k.','Space-separated window maxes.','1≤k≤n≤10^5','maxWindow','arr:arr,k:int->arr',['Queue','Deque'],
+[['8\n1 3 -1 -3 5 3 6 7\n3','3 3 5 5 6 7'],['5\n1 2 3 4 5\n1','1 2 3 4 5'],['4\n9 11 8 7\n2','11 11 8'],['6\n4 4 4 4 4 4\n3','4 4 4 4',1],['5\n5 4 3 2 1\n3','5 4 3',1]]),
+];
