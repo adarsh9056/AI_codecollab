@@ -1,6 +1,6 @@
 # CodeCollab AI — Real-Time Collaborative Coding Platform
 
-An AI-assisted real-time collaborative coding platform for DSA practice, competitive programming, and mock interviews.
+An  AI-assisted real-time collaborative coding platform for DSA practice, competitive programming, and mock interviews.
 
 ## Live Links
 
